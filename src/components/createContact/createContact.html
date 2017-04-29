@@ -1,0 +1,17 @@
+<h1 class="header mainHeader">Create a Contact</h1>
+
+<div class="container">
+  <div>
+    <label>First Name: </label><input [(ngModel)]="firstName" type="text" placeholder="First Name" class="createInput">
+  </div>
+  <div>
+    <label>Last Name: </label><input [(ngModel)]="lastName" type="text" placeholder="Last Name" class="createInput">
+  </div>
+  <div>
+    <label>Phone Number: </label><input [(ngModel)]="phoneNumber" type="text" placeholder="Phone Number" class="createInput">
+  </div>
+  <div>
+    <label>Address: </label><input [(ngModel)]="address" type="text" placeholder="Address" class="createInput">
+  </div>
+  <div id="submitNewContact" (click)="submitNewContact()">Submit</div>
+</div>

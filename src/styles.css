@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+div, h1, h2, h3, p, span, a, html, body {
+  margin: 0;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  background-color: #3F51B5;
+}
+
+#navbar {
+  background-color: #1A237E;
+  font-family: Helvetica;
+  font-weight: 200;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#leftNav {
+  float: left;
+
+  font-weight: 300;
+}
+
+#rightNav {
+  float: right;
+}
+
+.navItem {
+  margin: 5px 20px 0 0;
+  float: left;
+  font-weight: 100;
+  color: rgba(1000,1000,1000,0.8);
+  transition: all 0.3s;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: rgba(1000,1000,1000,1)
+}
+
+#leftNav {
+  cursor: pointer;
+}
+
+.navActive {
+  border-bottom: 1px solid white;
+}
+
+#contactsContainer {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.mainHeader {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#searchbar {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  background-color: #303F9F;
+  border: 1px solid #1A237E;
+  overflow: hidden;
+  font-size: 25px;
+  align-items: center;
+  width: 100%;
+}
+
+.contactName {
+  float: left;
+  margin-left: 20px;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 7px 0;
+}
+
+.contactName:hover {
+  cursor: pointer;
+}
+
+.xContacts {
+  float: left;
+  margin-left: 5px;
+  font-size: 50px;
+  color: rgba(26,35,126,0.5);
+  transition: all 0.3s;
+  margin-top: 5px;
+}
+
+
+.xContacts:hover, .editContacts:hover {
+  color: rgba(26,35,126,1);
+  cursor: pointer;
+}
+
+.editContacts {
+  float: right;
+  margin-right: 5px;
+  color: rgba(26,35,126,0.5);
+  margin-top: 5px;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #303F9F;
+  border: 1px solid #1A237E;
+  padding: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.header {
+  font-weight: 100;
+  margin-bottom: 5px;
+  font-family: Helvetica;
+}
+
+.center {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.createInput {
+  float: right;
+  width: 75%;
+}
+
+#submitNewContact {
+  background-color: #1A237E;
+  color: white;
+  border-radius: 3px;
+  float: right;
+  padding: 10px 20px;
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: 100;
+  transition: all 0.4s;
+}
+
+#submitNewContact:hover {
+  cursor: pointer;
+  background-color: #303F9F;
+}
+
+.updateContact {
+  float:left;
+  font-family: Helvetica;
+  background-color: #1A237E;
+  padding: 10px 20px;
+  margin-top: 5px;
+}

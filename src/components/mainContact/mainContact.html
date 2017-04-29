@@ -1,0 +1,12 @@
+<div id="mainContainer">
+  <h1 class="header mainHeader">My Contacts</h1>
+  <div id="contactsContainer">
+    <input id="searchbar" type="text" placeholder="Search" (keyup)="sortContacts()" [(ngModel)]="searchParam">
+    <div *ngFor="let contact of contacts; let i = index" class="contactItem">
+      <i class="fa fa-times xContacts" aria-hidden="true" (click)="deleteContact(contact.id)"></i>
+      <p class="contactName" [routerLink]="['/contact', contact.id]">{{contact.firstName}}</p>
+      <p class="contactName" [routerLink]="['/contact', contact.id]">{{contact.lastName}}</p>
+      <i class="fa fa-pencil-square-o editContacts" aria-hidden="true" [routerLink]="['/editContact', contact.id]"></i>
+    </div>
+  </div>
+</div>

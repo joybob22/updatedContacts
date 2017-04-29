@@ -1,0 +1,9 @@
+<div id="navbar">
+  <h1 id="leftNav" [routerLink]="['/mainContact']">Contacts</h1>
+  <div id="rightNav">
+    <h2 class="navItem" [routerLink]="['/mainContact']" (click)="mainActive()" [ngClass]="{'navActive': mainActiveBool}">My Contacts</h2>
+    <h2 class="navItem" [routerLink]="['/createContact']" (click)="createActive()" [ngClass]="{'navActive': createActiveBool}">Create Contact</h2>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
