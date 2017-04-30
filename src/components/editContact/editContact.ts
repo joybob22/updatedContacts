@@ -20,7 +20,6 @@ export class EditContactComponent {
     this.contactID = _route.snapshot.params['id'];
     contactService.getUnsortedContacts().then((newInfo) => {
       this.contacts = newInfo;
-      console.log(this.contacts);
       this.findContactIndex();
       this.firstName = this.contacts[this.contactIndex].firstName;
       this.lastName = this.contacts[this.contactIndex].lastName;
@@ -31,7 +30,7 @@ export class EditContactComponent {
 
   findContactIndex() {
     for(let i = 0; i < this.contacts.length; i++) {
-      if(this.contacts[i].id == this.contactID) {
+      if(this.contacts[i]._id == this.contactID) {
         this.contactIndex = i;
         break;
       }
@@ -44,11 +43,11 @@ export class EditContactComponent {
       lastName: this.lastName,
       phoneNumber: this.phoneNumber,
       address: this.address,
-      id: this.contacts[this.contactIndex].id
+      _id: this.contacts[this.contactIndex]._id
     };
-    this.contacts[this.contactIndex] = newContact;
-    let updateContact = {contacts: this.contacts};
-    this.contactService.editContact(updateContact).then((worked) => {
+    // this.contacts[this.contactIndex] = newContact;
+    // let updateContact = {contacts: this.contacts};
+    this.contactService.editContact(newContact).then((worked) => {
       if(worked) {
         this.updated = true;
       }

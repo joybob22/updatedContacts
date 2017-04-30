@@ -21,7 +21,7 @@ export class SpecificContactComponent {
 
   findContactIndex() {
     for(let i = 0; i < this.contacts.length; i++) {
-      if(this.contacts[i].id == this.contactID) {
+      if(this.contacts[i]._id == this.contactID) {
         this.contactIndex = i;
         break;
       }
